@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tem-hum</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Temperatura: {{temp}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <canvas #gauge></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Humedad: {{hum}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <canvas #gaugeH></canvas>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

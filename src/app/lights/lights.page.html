@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lights</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Toggles in a List -->
+  <ion-item>
+    <ion-label>Livingroom</ion-label>
+    <ion-toggle [(ngModel)]="livingroom" (ionChange)="updateStatus()"></ion-toggle>
+    <ion-button (click)="getStatistics()" color="primary">Statistics</ion-button>
+  </ion-item>
+
+</ion-content>

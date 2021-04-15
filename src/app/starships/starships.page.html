@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>starships</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let s of starShips">
+    <ion-card-header>
+      <ion-card-title>{{s.name}}</ion-card-title>
+      <ion-card-subtitle><strong>Modelo: </strong> {{s.model}}</ion-card-subtitle>
+      <ion-label><strong>Clase: </strong> {{s.starship_class}}</ion-label>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Fabricante: {{s.manufacturer}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Costo en creditos: {{s.cost_in_credits}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Longitud: {{s.length}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Velocidad máxima de atmósfera: {{s.max_atmosphering_speed}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Tripulacion: {{s.crew}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Pasajeros: {{s.passengers}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Capacidad de carga: {{s.cargo_capacity}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Consumibles: {{s.consumables}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Calificación de hiperimpulsor: {{s.hyperdrive_rating}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>MGLT: {{s.MGLT}}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
